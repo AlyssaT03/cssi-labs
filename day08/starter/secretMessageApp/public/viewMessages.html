@@ -21,15 +21,15 @@
         <div class="content">
             <h2 class="has-text-centered mt-6">View Your Messages!</h2>
         </div>
-        <div id="passcodeInput" class="hero-body has-text-centered">
+        <div id="passcodeInput1" class="hero-body has-text-centered">
             <div class="login">
             <form action="javascript:void(0);">
                 <div class="field">
                     <div class="control">
-                        <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode" required />
+                        <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode1" required />
                     </div>
                 </div>
-                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg" onclick="getMessages()">
+                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg1" onclick="getMessages(1)">
                     Click Here
                 </button>
             </form>
@@ -37,8 +37,29 @@
             </div>
         </div>
         <section class="container">
-            <h2 id="message" class="subtitle is-4"></h2>
+        <h2 id="message1" class="subtitle is-4"></h2>
         </section>
+
+        <div class="column">
+            <div id="passcodeInput2" class="card has-text-centered">
+                <div class="login">
+                <form action="javascript:void(0);">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode2" required />
+                        </div>
+                    </div>
+                    <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg2" onclick="getMessages(2)">
+                        Click Here
+                    </button>
+                </form>
+                <br>
+                </div>
+            </div>
+        </div>
+        <section class="container">
+            <h2 id="message2" class="subtitle is-4"></h2>
+        </section>        
 
     </section>
   <script src="js/viewMessages.js"></script>
